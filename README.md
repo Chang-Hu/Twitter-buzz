@@ -22,43 +22,10 @@ Hint:
 Use Google DataStore Service to cache the returned tweets: create a DataStore class having data members such as: id, text, from_user, from_user_name, Created_at, location. Based on the Twitter response, extract information from the response and store it into an object instance of DataStore class for each tweet. Later, when you are answering the same query, you should reuse the tweets stored in the DataStore rather than sending a new request to Twitter API.
  
 4. Buzz Extraction
-Write a buzz extraction module in which you extract the top 10 popular buzzes. You could at the minimum determine the frequency of "significant" words and use that count to determine the top buzzes. You are welcome use more sophisticated approaches.
- 
-For example, if the category is "sports" - you might find "baseball", "basketball", "football" and "miami heats" as high frequency words in tweets. 
+Write a buzz extraction module in which you extract the top 10 popular buzzes. You could at the minimum determine the frequency of "significant" words and use that count to determine the top buzzes. You are welcome use more sophisticated approaches. For example, if the category is "sports" - you might find "baseball", "basketball", "football" and "miami heats" as high frequency words in tweets. 
  
 5. Sentiment Analysis
-Write a sentiment analysis module, in which you find out the major sentiment of tweets related to the each buzz. Use the sentiment dictionary for microblog (http://neuro.imm.dtu.dk/wiki/AFINN) to score major sentiment toward a buzz. You can category the sentiments as "very positive", "positive", "neutral", "negative" and "very negative".
- 
-For example, if the buzz is "Cloud Computing", the corresponding sentiment might be "very positive".
+Write a sentiment analysis module, in which you find out the major sentiment of tweets related to the each buzz. Use the sentiment dictionary for microblog (http://neuro.imm.dtu.dk/wiki/AFINN) to score major sentiment toward a buzz. You can category the sentiments as "very positive", "positive", "neutral", "negative" and "very negative". For example, if the buzz is "Cloud Computing", the corresponding sentiment might be "very positive".
  
 6. What to display:
 Display the top 10 buzzes and corresponding sentiments in a tabular format. The columns should include 5 (random) users and their tweets that contributed to the buzz, his/her image. You can retrieve the image while you received the tweet from the Twitter search API. Example:
- 
-Search: New York
-Category: Sports
-
-Result:
-No. Buzz Sentiment
-1. football neutral
------------------------------
-User1 Tweet1 Image1 username1
-User2 Tweet2 Image2 username2
-User3 Tweet3 Image3 username3
-User4 Tweet4 Image4 username4
-------------------------------
- 
-2 basketball positive
------------------------------
-User1 Tweet1 Image1 username1
-User2 Tweet2 Image2 username2
-User3 Tweet3 Image3 username3
-User4 Tweet4 Image4 username4
-------------------------------
- 
-3 baseball excited
------------------------------
-User1 Tweet1 Image1 username1
-User2 Tweet2 Image2 username2
-User3 Tweet3 Image3 username3
-User4 Tweet4 Image4 username4
-------------------------------
