@@ -3,6 +3,8 @@ Twitter-buzz
 
 Buzz extraction and sentiment analysis on Twitter API
 
+Todo: migrate Api 1.0 to 1.1 using OAuth
+
 1. Google App Engine:
 In this assignment you are required to learn and make use of Google App Engine and the services it offers. Use Google App Engine's Java or Python SDK to create an application which performs the below mentioned tasks and is deployed on Google App Engine.
 - Download the Java SDK Plugin for Eclipse from: http://code.google.com/appengine/downloads.html#Download_the_Google_Plugin_for_Eclipse
